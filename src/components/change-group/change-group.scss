@@ -1,0 +1,41 @@
+.change-group {
+	position: relative;
+
+	&__input-name {
+		margin-bottom: 18px;
+	}
+
+	&__colors-list {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 26px;
+	}
+
+	&__color-item {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		font-size: 0;
+		border-radius: 50%;
+		background-color: var(--clr-base-text);
+		cursor: pointer;
+		transition: box-shadow .25s ease-in-out;
+	}
+
+	&__color-item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__color-item:hover {
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
+	&__color-item.active {
+		box-shadow: 0 0 0 2px var(--clr-white-text);
+	}
+
+	&__btn-add {
+		width: 100%;
+	}
+
+}

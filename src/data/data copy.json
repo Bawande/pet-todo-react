@@ -1,0 +1,144 @@
+{
+	"taskGroupsArray": [
+		{
+			"idGroup": 10000,
+			"order": 0,
+			"typeGroup": "all-tasks",
+			"nameGroup": "Все задачи",
+			"colorGroup": 0
+		},
+		{
+			"idGroup": 10001,
+			"order": 1,
+			"typeGroup": "custom-task",
+			"nameGroup": "Работа",
+			"colorGroup": 1
+		},
+		{
+			"idGroup": 10002,
+			"order": 2,
+			"typeGroup": "custom-task",
+			"nameGroup": "Личное",
+			"colorGroup": 2
+		},
+		{
+			"idGroup": 10003,
+			"order": 3,
+			"typeGroup": "custom-task",
+			"nameGroup": "Покупки",
+			"colorGroup": 4
+		},
+		{
+			"idGroup": 10004,
+			"order": 4,
+			"typeGroup": "custom-task",
+			"nameGroup": "Развлечение",
+			"colorGroup": 1
+		},
+		{
+			"idGroup": 10005,
+			"order": 5,
+			"typeGroup": "custom-task",
+			"nameGroup": "Обучение",
+			"colorGroup": 3
+		}
+	],
+	"tasksArray": [
+		{
+			"id": 20001,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Прочитать 'Современный учебник JavaScript (2021)'",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20002,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Прочитать 'Современные шаблоны для разработки приложений'",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20003,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Добавить в конспект React тему 'React Hooks: useState'",
+			"completed": true,
+			"remote": false
+		},
+		{
+			"id": 20004,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Добавить в конспект React тему 'React Hooks: useContext'",
+			"completed": true,
+			"remote": false
+		},
+		{
+			"id": 20005,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Добавить в конспект React тему 'React Hooks: useEffect'",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20006,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Добавить в конспект React тему 'React Hooks: useReducer'",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20007,
+			"groupId": 10005,
+			"subtaskId": 0,
+			"taskText": "Добавить в конспект React тему 'React Hooks: useRef'",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20009,
+			"groupId": 10001,
+			"subtaskId": 0,
+			"taskText": "Написать резюме",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 200013,
+			"groupId": 10001,
+			"subtaskId": 0,
+			"taskText": "Создать readme на gitHub для проекта 'pet-side-glomaco'",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20010,
+			"groupId": 10003,
+			"subtaskId": 0,
+			"taskText": "Купить продукты",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20011,
+			"groupId": 10002,
+			"subtaskId": 0,
+			"taskText": "Сходить в банк",
+			"completed": false,
+			"remote": false
+		},
+		{
+			"id": 20012,
+			"groupId": 10002,
+			"subtaskId": 0,
+			"taskText": "Сходить к врачу",
+			"completed": false,
+			"remote": false
+		}
+	]
+}

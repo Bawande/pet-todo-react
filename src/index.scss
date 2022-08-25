@@ -1,0 +1,131 @@
+:root {
+	--clr-accent: #1AC897;
+	--clr-accent-dark: #149B75;
+	
+	--clr-warning: #C44543;
+	--clr-black: #1e1e1e;
+	
+	--clr-base-text: #CCCCCC;
+	--clr-white-text: #FFF;
+	
+	--clr-base-background: #363636;
+	--clr-dark-background: #272822;
+	--clr-light-background: #9E9E9E;
+	
+	--clr-marker-lazureRadiance: #0A84FF;
+	--clr-marker-royalBlue: #5E5CE6;
+	--clr-marker-wildWatermelon: #FF4F79;
+	--clr-marker-heliotrope: #D57FF5;
+	--clr-marker-laser: #C9A675;
+	--clr-marker-rollingStone: #727E87;
+	--clr-marker-zinnwaldite: #EBB5AE;
+}
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+input {
+	border: none;
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+//   background-color: #212121;
+  background: #212121 url(./assets/img/background.jpg) 0 0/cover no-repeat;
+  color: var(--clr-base-text);
+}
+
+.btn-nav {
+	background-color: var(--clr-base-background);
+	display: block;
+	width: 24px;
+	height: 24px;
+	border-radius: 3px;
+
+	transition: background-color .25s ease-in-out;
+	
+	&:active {
+		background-color: var(--clr-dark-background);
+	}
+	
+	&__close {
+		background-image: url(./assets/ico/close-w.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 16px 16px;
+	}
+	
+	&__close:hover {
+		background-color: var(--clr-warning);
+	}
+}
+
+.input-media{
+	
+	&__text{
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 8px 16px;
+		font-family: inherit;
+		font-size: 16px;
+		color: var(--clr-white-text);
+		background-color: var(--clr-base-background);
+		border: 1px solid var(--clr-black);
+		border-radius: 3px;
+		
+		&::placeholder{
+			color: var(--clr-light-background);
+		}
+
+		&:focus {
+			border-color: var(--clr-light-background);
+		}
+
+	}
+
+}
+
+.btn-media {
+	background-color: var(--clr-accent);
+	padding: 10px 16px;
+	font-size: 14px;
+	text-align: center;
+	color: var(--clr-white-text);
+	border-radius: 4px;
+	transition: background-color .1s ease-in-out;
+	
+	&:hover {
+		background-color: var(--clr-accent-dark);
+	}
+
+	&:active {
+		background-color: var(--clr-accent);
+	}
+}
+
+

@@ -1,0 +1,36 @@
+.task-head {
+	position: relative;
+
+
+
+	&__add-task {
+		padding: 30px 30px 15px;
+	}
+
+	&__btn-add {
+		display: block;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 43px;
+		right: 40px;
+		
+		svg {
+			width: inherit;
+			height: inherit;
+			stroke: var(--clr-light-background);
+		}
+
+		&:hover {
+			
+			svg {
+				stroke: var(--clr-accent);
+			}
+		}
+	}
+
+	&__input {
+		padding-right: 40px !important;
+	}
+
+}
