@@ -88,9 +88,12 @@
 		top: 50%;
 		right: 14px;
 		transform: translateY(-50%);
+		transition: all .25s ease-in-out;
 	}
 
 	&__item--custom-task:hover>&__count-task{
+		color: var(--clr-dark-background);
+		font-size: 0;
 		visibility: hidden;
 	}
 
