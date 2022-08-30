@@ -24,10 +24,13 @@ const PopUp = ({ closePopup, title, children }) => {
 		<div className="pop-up__wrapper">
 			<div className="pop-up">
 				<h3 className="pop-up__title">{title}</h3>
-				<button
-					className="pop-up__btn-close btn-nav btn-nav__close"
-					onClick={() => dispatchInterfaceState({ type: `${closePopup}` })}
-				></button>
+				{(closePopup !== 'NONE') && (
+					<button
+						className="pop-up__btn-close btn-nav btn-nav__close"
+						onClick={() => dispatchInterfaceState({ type: `${closePopup}` })}
+					></button>
+				)}
+
 				{children}
 			</div>
 		</div>

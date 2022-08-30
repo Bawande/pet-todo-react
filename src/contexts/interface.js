@@ -10,6 +10,7 @@ const initialInterfaceState = {
 	curentDragBoard: null,
 	activeGroupId: 10000,
 	showHeadMenu: false,
+	isMobile: false,
 }
 
 const changeStatusActiveColor = (colorArray, activeId) => {
@@ -106,6 +107,20 @@ const reducerInterfaceState = (state, action) => {
 			return {
 				...state,
 				colorGroupArray,
+			};
+		}
+
+		case "ON_MOBILE": {
+			return {
+				...state,
+				isMobile: true,
+			};
+		}
+
+		case "OFF_MOBILE": {
+			return {
+				...state,
+				isMobile: false,
 			};
 		}
 

@@ -2,13 +2,14 @@ import React, { useContext } from 'react';
 import { DataGroupContext, DataTaskContext } from '../../contexts/data';
 import { InterfaceContext } from "../../contexts/interface";
 
+
+
 const GroupList = () => {
 
 
 	const [objectDataState, dispatchDataState] = useContext(DataGroupContext);
-	const [objectInterfaceState, dispatchInterfaceState] = useContext(InterfaceContext);
 	const [objectTaskDataState, dispatchTaskDataState] = useContext(DataTaskContext);
-
+	const [objectInterfaceState, dispatchInterfaceState] = useContext(InterfaceContext);
 
 
 
